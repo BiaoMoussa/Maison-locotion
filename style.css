@@ -1,0 +1,379 @@
+/************************   GENERAL *************/
+body
+{
+    margin: 0;
+    padding: 0;
+    color: #333;
+    font: 1em/1.2 Helvetica, Arial, Geneva, sans-serif;
+}
+
+p
+{
+    line-height: 1.5;
+    margin: 0;
+}
+
+a:link
+{
+    color: #337ab3;
+    text-decoration: none;
+}
+a:visited 
+{
+    color: #002366;
+}
+a:focus 
+{
+    color: black;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+a:active
+{
+    color: #f43c80;
+}
+
+hr
+{
+    margin: 1em 0 2em 0;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+table
+{
+    border-collapse: collapse;
+    border-top: 1px solid #ddd;
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+
+.container
+{
+    max-width: 70em;
+    margin: 0 auto;
+   
+}
+.clear
+{
+    clear: both;
+}
+h1,h2,h3,h4,h5,h6
+{
+    font-weight: 500;
+    margin: 0 0 0.5em;
+}
+
+.img-resposive
+{
+    max-width: 100%;
+}
+/****************** GENERAL *****************/
+/**************HAUT *************************/
+
+header
+{   
+   background-image: url(images/banniere.webp) ;
+   background-repeat: no-repeat;
+   background-size: 100% 100%;
+   background-position: 3px ;
+  
+    padding: 1em 3em;
+    min-height: 30em;
+    
+}
+
+.header-slogan,.header-droite
+{
+    padding: 0.3em 0 0 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif, 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.header-logo
+{
+    float: left;
+    margin-bottom: 1em;
+    margin-right: 5%;
+    width: 30%;
+    text-align: center;
+    
+}
+
+h1, .header-nom-site
+{
+    margin: 0;
+    font-size: 1.5em;
+    
+}
+.header-nom-site
+{
+    text-align: center;
+    font-weight: bold;
+    color: orange;
+    font-size: 3em;
+}
+.header-slogan
+{
+    float: left;
+    width: 30%;
+    margin-bottom: 1em;
+    margin-right: 5%;
+    text-align: center;
+    color: white;
+    font-size:x-large;
+    /*background-color: blue;*/
+}
+.header-droite
+{
+    float: left;
+    width: 30%;
+    text-align: right;
+    color: white;
+    font-size:x-large;
+}
+
+
+/***************** HAUT **************************************/
+/******************* MENU ******************************/
+
+nav
+{
+    background: #555;
+    text-align: center;
+    min-height: 30px;
+}
+
+
+nav ul
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav ul li
+{
+    margin: 0;
+    display: inline;
+}
+
+nav ul li a
+{
+    display: inline-block;
+    text-decoration: none;
+    padding: 0 2em;
+    color: #fff !important;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+na
+
+
+nav ul a:hover
+{
+    background: #337ab7;
+    text-decoration: none;
+}
+
+/****************** MENU ***************/
+
+/***************** CONTENU ********************/
+section
+{
+    padding: 1em;
+}
+
+main
+{
+    float: left;
+    width: 65%;
+    margin-right: 5%;
+    margin-bottom: 1em;
+}
+
+aside
+{
+    float: left;
+    width: 30%;
+    margin-bottom: 1em;
+}
+
+/********************* BAS ****************/
+footer
+{
+    color: #fff;
+    background: #555;
+    padding: 1em 1.25em;
+}
+
+/********************* BAS ****************/
+
+/*************** RESPONSIVE TABLETTE *******/
+
+@media (max-width:60em)
+{
+    /* une seule colonne (one column page) */
+    body:before
+    {
+        
+        
+        position: absolute;
+        color: #fff;
+        padding: 2px;
+        font-size: 12px;
+    }
+    .container img
+    {
+        max-width: 50em;
+    }
+    main 
+    {
+        width: 100%;
+    }
+    aside 
+    {
+        width: 100%;
+    }
+}
+
+/*********** RESPONSIVE TABLETTE  *************/
+
+/********** RESPONSABLE SMARTPHONE  *************/
+@media (max-width : 36em)
+{
+    /* width 100% pour les éléments du header etdu menu (full width) */
+    body::before
+    {
+        position: absolute;
+        color: white;
+        padding: 2px;
+        font-size: 12px;
+    } 
+    .container img
+    {
+        max-width: 17em;
+        
+    }
+    .header-logo
+    {
+        width: 100%;
+        text-align: left;
+    }
+    .header-slogan
+    {
+        width: 100%;
+        text-align: left;
+    }
+    .header-droite
+    {
+        width: 100%;
+        text-align: left;
+    }
+    nav ul li a 
+    {
+        display: block;
+        border-bottom: 1px solid #c0c0c0;
+        text-align: left;
+    }
+}
+/************* RESPONSIVE SMARTPHONE  ****************/
+
+/******** REPRISE FACULTATIVE  **********************/
+.list-unstyled
+{
+    padding-left:0 ;
+    list-style: none;
+}
+.list-inline
+{
+    padding-left: 0;
+    margin-left: -5px;
+    list-style: none;
+}
+.list-inline > li
+{
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.btn
+{
+    color: white !important;
+    background-color:royalblue;
+    border-color: #222;
+    display: inline-block;
+    padding: 0.5em 1em;
+    margin-bottom: 0;
+    font-weight: 400;
+    line-height: 1.2;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor:pointer;
+    border: 1px solid transparent;
+    border-radius: 0.2em;
+    text-decoration: none;
+}
+.btn:hover
+{
+    color: white !important;
+    background-color: #111;
+}
+.btn:focus
+{
+    color: white !important;
+    background-color: #fda500;
+}
+.btn:active
+{
+    color: white !important;
+    background-color: #f43c80;
+}
+/************* REPRISE FACULTATIVE ******/
+
+/**************** FORMULAIRE CONTACT *******/
+
+form
+{
+    text-align: center;
+    background: rgb(221, 221, 221);
+}
+form h1
+{
+    font: bold;
+    text-transform: capitalize;
+    font-size: 2em;
+    color: #e69a0d;
+}
+form span input
+{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 15em;
+    height: 2em;
+    border: 1px rgb(180, 177, 177) solid;
+    border-radius: 5px;
+    text-align: center;
+    font-size: medium;
+}
+
+textarea
+{
+    border: 1px rgb(180, 177, 177) solid;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 2em;
+    background-color: #acc2d4c0;
+    font-size: medium;
+}
+.submit input
+{
+    background-color:#074e88 ;
+    font-weight: 800;
+    color: white;
+}
